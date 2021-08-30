@@ -58,9 +58,10 @@ Tests
      assert 42 == x.some_attribute
      assert "foo" == x._a_private_attribute
 
+- Leave empty lines around ``assert`` blocks.
 - To run the test suite, all you need is a recent tox_.
   It will ensure the test suite runs with all dependencies against all Python versions just as it will in our CI.
-  If you lack some Python versions, you can can always limit the environments like ``tox -e py27,py35`` (in that case you may want to look into pyenv_, which makes it very easy to install many different Python versions in parallel).
+  If you lack some Python versions, you can can always limit the environments like ``tox -e py36,py37`` (in that case you may want to look into pyenv_ or asdf_, which make it very easy to install many different Python versions in parallel).
 - Write `good test docstrings`_.
 
 
@@ -96,10 +97,10 @@ Documentation
 
      - Added ``argon2_cffi.func()`` that does foo.
        It's pretty cool.
-       [`#1 <https://github.com/hynek/argon2_cffi/pull/1>`_]
+       `#1 <https://github.com/hynek/argon2_cffi/pull/1>`_
      - ``argon2_cffi.func()`` now doesn't crash the Large Hadron Collider anymore.
        That was a nasty bug!
-       [`#2 <https://github.com/hynek/argon2_cffi/pull/2>`_]
+       `#2 <https://github.com/hynek/argon2_cffi/pull/2>`_
 
 
 Local Development Environment
@@ -197,6 +198,7 @@ Thank you for considering to contribute!
 .. _changelog: https://github.com/hynek/argon2-cffi/blob/main/CHANGELOG.rst
 .. _`tox`: https://tox.readthedocs.io/
 .. _pyenv: https://github.com/pyenv/pyenv
+.. _asdf: https://asdf-vm.com/
 .. _reStructuredText: https://www.sphinx-doc.org/en/master/usage/restructuredtext/basics.html
 .. _semantic newlines: https://rhodesmill.org/brandon/2012/one-sentence-per-line/
 .. _CI: https://github.com/hynek/argon2-cffi/actions?query=workflow%3ACI
